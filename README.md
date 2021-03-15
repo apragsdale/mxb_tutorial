@@ -27,5 +27,15 @@ stays working.
 
 Similarly, `demesdraw` is a package for plotting nice representations of
 demographic models using the `demes` specification, developed primarily
-by Graham Gower. That will also get a proper release soon, but we'll also
+by {user}(grahamgower). That will also get a proper release soon, but we'll also
 pull from git for that package as well.
+
+## Notebooks
+
+Under the `notebooks` directory, there are (or will be) a couple of
+jupyter-notebooks with examples or tutorials.
+
+## Models
+
+Under the `models` directory, there are a few example, and in the future
+inferred, demographic models in `demes` format.

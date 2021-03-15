@@ -5,3 +5,4 @@ stdpopsim
 demes
 git+https://bitbucket.org/simongravel/moments.git@devel
 git+https://github.com/grahamgower/demesdraw.git
+notebook
