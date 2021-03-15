@@ -1,42 +1,42 @@
-description: The Gutenkunst et al. (2009) OOA model.
+description: The Jouganous et al. (2017) OOA model.
 doi:
-- https://doi.org/10.1371/journal.pgen.1000695
+- https://doi.org/10.1534/genetics.117.200493
 time_units: years
-generation_time: 25
+generation_time: 29
 
 demes:
 - id: ancestral
   description: Equilibrium/root population
   epochs:
-  - {end_time: 220e3, start_size: 7300}
+  - {end_time: 312e3, start_size: 11273}
 - id: AMH
   description: Anatomically modern humans
   ancestors: [ancestral]
   epochs:
-  - {end_time: 140e3, start_size: 12300}
+  - {end_time: 125e3, start_size: 23721}
 - id: OOA
   description: Bottleneck out-of-Africa population
   ancestors: [AMH]
   epochs:
-  - {end_time: 21.2e3, start_size: 2100}
+  - {end_time: 42.3e3, start_size: 3104}
 - id: YRI
   description: Yoruba in Ibadan, Nigeria
   ancestors: [AMH]
   epochs:
-  - start_size: 12300
+  - start_size: 23721
 - id: CEU
   description: Utah Residents (CEPH) with Northern and Western European Ancestry
   ancestors: [OOA]
   epochs:
-  - {start_size: 1000, end_size: 29725}
+  - {start_size: 2271, end_size: 39611}
 - id: CHB
   description: Han Chinese in Beijing, China
   ancestors: [OOA]
   epochs:
-  - {start_size: 510, end_size: 54090}
+  - {start_size: 924, end_size: 83771}
 
 migrations:
-- {demes: [YRI, OOA], rate: 25e-5}
-- {demes: [YRI, CEU], rate: 3e-5}
-- {demes: [YRI, CHB], rate: 1.9e-5}
-- {demes: [CEU, CHB], rate: 9.6e-5}
+- {demes: [YRI, OOA], rate: 15.8e-5}
+- {demes: [YRI, CEU], rate: 1.10e-5}
+- {demes: [YRI, CHB], rate: 0.48e-5}
+- {demes: [CEU, CHB], rate: 4.19e-5}
