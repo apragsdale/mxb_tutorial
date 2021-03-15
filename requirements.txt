@@ -1,0 +1,7 @@
+numpy
+scipy
+msprime==1.0.0a6
+stdpopsim
+demes
+git+https://bitbucket.org/simongravel/moments.git@devel
+git+https://github.com/grahamgower/demesdraw.git
